@@ -1,0 +1,50 @@
+# ----------------------
+# Python
+# ----------------------
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.log
+
+# ----------------------
+# Environment & Secrets
+# ----------------------
+.env
+*service-account*.json
+gcp_key.json
+
+# ----------------------
+# Airflow
+# ----------------------
+airflow/logs/
+airflow/airflow.db
+airflow/airflow.cfg
+airflow/webserver_config.py
+
+# ----------------------
+# dbt
+# ----------------------
+dbt/**/dbt_packages/
+dbt/**/target/
+dbt/**/logs/
+dbt/**/profiles.yml
+
+# ----------------------
+# IDE
+# ----------------------
+.idea/
+.vscode/
+.DS_Store
+
+# ----------------------
+# Coverage
+# ----------------------
+.coverage
+htmlcov/
+
+
+keys/
+airflow_logs/
+**/__pycache__/
+.venv*/

@@ -1,0 +1,7 @@
+[
+  {"name": "timestamp", "type": "TIMESTAMP", "mode": "REQUIRED"},
+  {"name": "glucose_mmol_l", "type": "FLOAT", "mode": "REQUIRED"},
+  {"name": "patient_id", "type": "STRING", "mode": "REQUIRED"},
+  {"name": "source", "type": "STRING", "mode": "REQUIRED"},
+  {"name": "ingested_at", "type": "TIMESTAMP", "mode": "REQUIRED"}
+]
