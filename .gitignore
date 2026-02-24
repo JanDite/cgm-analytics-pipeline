@@ -48,3 +48,9 @@ keys/
 airflow_logs/
 **/__pycache__/
 .venv*/
+
+# -------------
+# Data (getting rid of big parquet file)
+# -------------
+data/
+*.parquet
