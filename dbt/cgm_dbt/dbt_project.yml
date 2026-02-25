@@ -1,0 +1,32 @@
+name: cgm_dbt
+version: 1.0.0
+config-version: 2
+
+profile: cgm_dbt
+
+model-paths: ["models"]
+analysis-paths: ["analysis"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  cgm_dbt:
+    staging:
+      +materialized: table
+      +partition_by:
+        field: event_date
+        data_type: date
+      +cluster_by: ["patient_id"]
+
+    marts:
+      +materialized: table
+      +partition_by:
+        field: event_date
+        data_type: date
+      +cluster_by: ["patient_id"]

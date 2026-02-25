@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: bronze
+    database: cgm-de-pipeline-personal
+    schema: bronze
+    tables:
+      - name: raw_cgm_readings
