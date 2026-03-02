@@ -33,5 +33,5 @@ SELECT
     COUNTIF(is_glucose_valid)
   ) AS tar_pct
 
-FROM {{ ref('stg_cgm_clean') }}
+FROM {{ ref("cgm_clean") }}
 GROUP BY event_date, patient_id

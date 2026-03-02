@@ -19,6 +19,7 @@ models:
   cgm_dbt:
     staging:
       +materialized: table
+      +dataset: silver
       +partition_by:
         field: event_date
         data_type: date
@@ -26,6 +27,7 @@ models:
 
     marts:
       +materialized: table
+      +dataset: gold
       +partition_by:
         field: event_date
         data_type: date
