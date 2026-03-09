@@ -1,0 +1,4 @@
+numpy>=2.0
+pandas>=2.3
+google-cloud-bigquery>=3.0
+python-dotenv>=1.0

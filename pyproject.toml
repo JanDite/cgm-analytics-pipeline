@@ -1,0 +1,29 @@
+[project]
+name = "cgm-analytics-pipeline"
+version = "0.1.0"
+description = "Data engineering pipeline for CGM analytics"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "numpy",
+  "pandas",
+  "python-dotenv",
+  "google-cloud-bigquery",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "ruff",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
