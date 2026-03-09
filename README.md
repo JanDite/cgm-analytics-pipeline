@@ -52,7 +52,7 @@ Tato pipeline automatizuje celý tok dat:
 
 ## 🏗️ Architektura systému (High-Level)
 
-[![CGM Data Pipeline Architecture](cgm-de-pipeline/docs/DE_project_CGM.svg)](https://miro.com/app/board/uXjVG7n_SOA=/?share_link_id=68207993244)
+[![CGM Data Pipeline Architecture](docs/DE_project_CGM.svg)](https://miro.com/app/board/uXjVG7n_SOA=/?share_link_id=68207993244)
 
 *Klikněte na diagram pro otevření jeho interaktivní verze v Miro.*
 ---
@@ -145,7 +145,7 @@ Agregace na úroveň **Pacient + Den**. Počítané metriky:
 ## 🔄 Tok dat
 
 ```
-Generator (Python) → BigQuery (Bronze) → dbt (Silver) → dbt (Gold) → Reporting
+Generator (Python) → BigQuery (Bronze) → dbt BigQuery (Silver) → dbt BigQuery (Gold) → Reporting (Looker)
 ```
 
 ---
