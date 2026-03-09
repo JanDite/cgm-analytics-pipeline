@@ -31,7 +31,7 @@ x-airflow-common: &airflow-common
 
   volumes:
     - ./dags:/opt/airflow/dags
-    - ./pipelines:/opt/airflow/pipelines
+    - ./:/opt/airflow/project
     - ./dbt:/opt/airflow/dbt
     - ./keys:/opt/airflow/keys:ro
     - airflow_logs:/opt/airflow/logs
