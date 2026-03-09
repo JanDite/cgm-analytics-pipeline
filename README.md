@@ -54,9 +54,8 @@ Tato pipeline automatizuje celý tok dat:
 
 [![CGM Data Pipeline Architecture](docs/DE_project_CGM.jpg)](https://miro.com/app/board/uXjVG7n_SOA=/?share_link_id=68207993244)
 
-*Klikněte na diagram pro otevření jeho interaktivní verze v Miro.*
 ---
-
+*Klikněte na diagram pro otevření jeho interaktivní verzi v Miro.*
 ## 🏗️ Struktura projektu
 
 ```
