@@ -7,8 +7,8 @@
 ![dbt](https://img.shields.io/badge/dbt-1.7-FF694B)
 ![Google BigQuery](https://img.shields.io/badge/Google%20BigQuery-GCP-4285F4)
 ![Docker](https://img.shields.io/badge/Docker-Compose-2496ED)
-![NumPy](https://img.shields.io/badge/NumPy_>_2.3-013243)
-![Pandas](https://img.shields.io/badge/Pandas_>_2.0-150458)
+![NumPy](https://img.shields.io/badge/NumPy-_>_2.3-013243)
+![Pandas](https://img.shields.io/badge/Pandas-_>_2.0-150458)
 ![dotenv](https://img.shields.io/badge/python--dotenv-4B8BBE)
 
 ---
