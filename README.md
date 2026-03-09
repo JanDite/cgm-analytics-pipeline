@@ -52,17 +52,9 @@ Tato pipeline automatizuje celý tok dat:
 
 ## 🏗️ Architektura systému (High-Level)
 
-```mermaid
-flowchart LR
-    Gen[Data Generator<br/>(Python)] -->|Micro-batch JSON| BQ_Raw[BigQuery<br/>Bronze Layer]
-    BQ_Raw --> DBT[dbt Transformation]
-    DBT --> BQ_Silver[BigQuery<br/>Silver Layer<br/>(Cleaned)]
-    BQ_Silver --> BQ_Gold[BigQuery<br/>Gold Layer<br/>(Daily Metrics)]
-    
-    Airflow[Apache Airflow] -->|Triggers| Gen
-    Airflow -->|Triggers| DBT
-```
+[![CGM Data Pipeline Architecture](docs/DE_project_CGM.jpg)](https://miro.com/app/board/uXjVG7n_SOA=/?share_link_id=68207993244)
 
+*Klikněte na diagram pro otevření jeho interaktivní verze v Miro.*
 ---
 
 ## 🏗️ Struktura projektu
